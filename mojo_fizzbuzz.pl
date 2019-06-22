@@ -15,7 +15,11 @@ __DATA__
 <h1>Welcome to the Mojolicious real-time web framework!</h1>
 <!-- 以下4行を追加 -->
 <% for my $num (1 .. 100){ %>
+  <% if ($num % 3 == 0 ){ %>
+    fizz
+  <% } else { %>
     <%= $num %>
+  <% } %>
 <% } %>
 
 @@ layouts/default.html.ep
