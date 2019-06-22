@@ -13,6 +13,10 @@ __DATA__
 % layout 'default';
 % title 'Welcome';
 <h1>Welcome to the Mojolicious real-time web framework!</h1>
+<!-- 以下4行を追加 -->
+<% for my $num (1 .. 100){ %>
+    <%= $num %>
+<% } %>
 
 @@ layouts/default.html.ep
 <!DOCTYPE html>
